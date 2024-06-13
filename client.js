@@ -76,6 +76,9 @@ console.log('total hobbies:', hobbies.length);
  * 4. Output the original array, odd number array and even number array
  */
 
+
+// i%2==0 statement checks for even numbers
+
 let numbers = [1, 2, 3, 4, 5]
 
 let oddNumbers = [];
@@ -108,6 +111,23 @@ for ( let i of numbers) {
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+
+let boolean = [false, true, true, true, false];
+
+let toggled = [];
+
+for ( let booleans of boolean) {
+     if (booleans === false) {
+          booleans = true; 
+         // console.log(booleans);
+         toggled.push(booleans)
+     } else if ( booleans === true) {
+          booleans = false;
+          toggled.push(booleans)
+     }
+}
+
+console.log(toggled);
 
 
 // Example output
