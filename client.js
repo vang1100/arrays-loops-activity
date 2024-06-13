@@ -7,7 +7,31 @@
  *    hobbies
  */
 
+console.log('testing');
 
+let hobbies = ['biking,', ' piano,', ' reading,', ' tv.'];
+let theString = 'My hobbies are:';
+
+
+
+for(let hobby of hobbies) {
+     theString = theString + hobby;
+}
+console.log(theString);
+
+// How about this?
+let hobbyArray = ['biking,' , ' piano,' , ' reading,' , ' tv.'];
+//let theString = 'My hobbies are: '
+
+for(let element of hobbyArray){
+console.log(element)
+
+}
+
+// for ( ) {
+     console.log()
+// }
+console.log('total hobbies:', hobbies.length);
 // Example output
 // 1. swimming
 // 2. board games
@@ -25,6 +49,17 @@
  * 4. Output the array and number of times teal was found
  */
 
+ let colors = ['orange', 'blue', 'teal', 'teal', 'white'];
+
+ let tealCount = 0;
+
+ for (let teal of colors){
+     if (teal === 'teal') {
+          tealCount += 1
+     }
+     }
+
+     console.log('how many teal counts', tealCount);
 
 // Example output
 // green, red, teal, orange, teal
@@ -41,6 +76,23 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+let numbers = [1, 2, 3, 4, 5]
+
+let oddNumbers = [];
+let evenNumbers = [];
+
+for ( let i of numbers) {
+     if ( i % 2 !== 0) {
+     oddNumbers.push(i); 
+     } else if (i % 2 == 0 ) { 
+     evenNumbers.push(i)
+      }
+     }
+
+     
+ console.log('odd numbers:', oddNumbers);
+
+ console.log('the even numbers are', evenNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
